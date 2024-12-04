@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ADD_BLUETOOTH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/Add_bluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/Scene_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Scene_1" />
+    <Button
+        android:id="@+id/Scene_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/button_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CLOSE_BLUETOOTH" />
+    <Button
+        android:id="@+id/CLOSE_BLUETOOTH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Close_bluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ADD_BLUETOOTH" />
+    <TextView
+        android:id="@+id/voltage_value_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="@string/voltage"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toEndOf="@+id/ADD_BLUETOOTH"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:id="@+id/voltage_value_boxes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/voltage_value_label"
+        app:layout_constraintTop_toBottomOf="@id/voltage_value_label"
+        android:layout_marginTop="0dp"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/voltage_box_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+
+        <EditText
+            android:id="@+id/voltage_box_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/voltage_value_boxes_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/voltage_value_boxes"
+        app:layout_constraintTop_toTopOf="@+id/voltage_value_boxes"
+        android:gravity="center">
+        <EditText
+            android:id="@+id/voltage_box_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+        <EditText
+            android:id="@+id/voltage_box_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:text="@string/Accuracy"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:focusable="false"
+            android:background="@android:drawable/edit_text"
+            android:textColor="#000000"
+            android:layout_marginTop="0dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
